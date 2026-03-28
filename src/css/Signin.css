@@ -1,10 +1,10 @@
 .page-bg {
-  background-color: #f5f7fa;
+  background-image: url(images/Dynamic.jpg);
   min-height: 100vh;
 }
 
 .form-card {
-  background: #1e1e2f;
+  background: #2a2af7;
   color: #fff;
   border-radius: 12px;
   padding: 30px;

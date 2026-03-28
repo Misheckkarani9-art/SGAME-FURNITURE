@@ -21,7 +21,7 @@ const Mycarousel = () => {
 
           <div className="carousel-item active">
             <img
-              src="images/1(3).jpg"
+              src="images/download.jpg"
               className="d-block w-100"
               alt="First slide"
               height="450px"
@@ -34,7 +34,7 @@ const Mycarousel = () => {
 
           <div className="carousel-item">
             <img
-              src="image"
+              src="images/1(3).jpg"
               className="d-block w-100"
               alt="Second slide"
               height="450px"

@@ -56,8 +56,8 @@ h1 {
   padding: 12px;
   border-radius: 8px;
   font-weight: bold;
-  background-color: #ffc107;
-  color: #1e1e2f;
+  background-color: #f5c947;
+  color: #1111ff;
   border: none;
   transition: all 0.3s;
 }
@@ -77,7 +77,7 @@ h1 {
 }
 
 .error-box {
-  background-color: #dc3545;
+  background-color: #cbdc35;
   color: #fff;
   padding: 10px;
   border-radius: 6px;

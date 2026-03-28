@@ -1,0 +1,101 @@
+.profile-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.profile-container input,
+.profile-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: #fff;
+}
+
+.profile-container textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+/* Profile Card */
+.profile-card {
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-pic {
+  margin-bottom: 15px;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+}
+
+.placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 15px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #38bdf8;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* Cancel button */
+.btn.cancel {
+  background: #64748b;
+  color: #fff;
+}
+
+.btn.cancel:hover {
+  background: #475569;
+}
+
+/* Logout button */
+.btn.logout {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn.logout:hover {
+  background: #dc2626;
+}

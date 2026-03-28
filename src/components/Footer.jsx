@@ -3,53 +3,59 @@ import { Link } from "react-router-dom";
 import "../css/Footer.css";
 
 const Footer = () => {
-  const year = new Date().getFullYear();
-
   return (
-    <footer className="pca-footer">
-      <div className="pca-footer__top">
-        <div className="pca-footer__brand">
-          <h3 className="pca-footer__logo">Prime Car Accessories</h3>
-          <p className="pca-footer__tagline">
-            Upgrade your ride with quality accessories, fast service, and trusted payments.
+    <footer className="footer">
+      <div className="footer-container">
+
+        {/* Brand */}
+        <div className="footer-section">
+          <h2 className="footer-logo">🎁 Gift Nest</h2>
+          <p className="footer-text">
+            Discover meaningful gifts, amazing deals, and curated products
+            for every occasion. Make every moment special with Gift Nest.
           </p>
-
-          <div className="pca-footer__badges">
-            <span className="pca-badge">Quality Products</span>
-            <span className="pca-badge">Fast Delivery</span>
-            <span className="pca-badge">Secure Payments</span>
-          </div>
         </div>
 
-        <div className="pca-footer__links">
-          <h4 className="pca-footer__title">Quick Links</h4>
-          <ul>
-            <li><Link to="/" className="pca-footer__link">Home</Link></li>
-            <li><Link to="/products" className="pca-footer__link">Products</Link></li>
-            <li><Link to="/contact" className="pca-footer__link">Contact</Link></li>
-            <li><Link to="/about" className="pca-footer__link">About</Link></li>
-          </ul>
+        {/* Quick Links */}
+        <div className="footer-section">
+          <h3>Quick Links</h3>
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/categories">Categories</Link>
+          <Link to="/deals">Deals</Link>
+          <Link to="/orders">Orders</Link>
+          <Link to="/addproducts">➕ Add Product</Link>
         </div>
 
-        <div className="pca-footer__contact">
-          <h4 className="pca-footer__title">Contact</h4>
-          <ul>
-            <li className="pca-footer__text">Nairobi, Kenya</li>
-            <li className="pca-footer__text">Phone: +254 7XX XXX XXX</li>
-            <li className="pca-footer__text">Email: info@primecaraccessories.com</li>
-            <li className="pca-footer__text">Hours: Mon - Sat, 8:00am - 6:00pm</li>
-          </ul>
+        {/* Categories */}
+        <div className="footer-section">
+          <h3>Gift Categories</h3>
+          <p>🎉 Birthday Gifts</p>
+          <p>💝 Anniversary Gifts</p>
+          <p>🎄 Holiday Gifts</p>
+          <p>🎁 Personalized Gifts</p>
+          <p>🏠 Home Gifts</p>
         </div>
+
+        {/* Contact */}
+        <div className="footer-section">
+          <h3>Contact</h3>
+          <p>Email: support@giftnest.com</p>
+          <p>Phone: +254 700 000 000</p>
+          <p>Location: Nairobi, Kenya</p>
+        </div>
+
+        {/* Developer */}
+        <div className="footer-section">
+          <h3>Developer</h3>
+          <p>Built by: Misheck Karani</p>
+          <p>Full Stack Developer</p>
+        </div>
+
       </div>
 
-      <div className="pca-footer__bottom">
-        <p className="pca-footer__copyright">
-          © {year} Prime Car Accessories. All rights reserved.
-        </p>
-
-        <p className="pca-footer__dev">
-          Developed by <span className="pca-footer__devname">Meshack Karani</span>
-        </p>
+      <div className="footer-bottom">
+        <p>© {new Date().getFullYear()} Gift Nest. All rights reserved.</p>
       </div>
     </footer>
   );

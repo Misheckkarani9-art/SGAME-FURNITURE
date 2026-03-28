@@ -1,57 +1,136 @@
-/* Wrap search so dropdown aligns well */
-.pnavSearchWrap{
-  position: relative;
-  margin-left: auto;
-}
-
-/* Dropdown */
-.pnavSearchDrop{
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  right: 0;
-  background: rgba(255,255,255,0.96);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(15, 23, 42, 0.10);
-  border-radius: 16px;
-  box-shadow: 0 26px 70px rgba(2, 8, 23, 0.14);
-  overflow: hidden;
-  z-index: 2000;
-}
-
-.pnavSearchItem{
-  width: 100%;
-  border: 0;
-  background: transparent;
-  padding: 12px 12px;
+.layout {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+}
+
+/* Sidebar fixed */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color .2s ease;
-  text-align: left;
 }
 
-.pnavSearchItem:hover{
-  background: rgba(13,202,240,0.10);
+.menu li:hover {
+  background: rgba(255,255,255,0.1);
 }
 
-.pnavSearchItemTitle{
-  font-weight: 900;
-  color: #0f172a;
-  font-size: 0.95rem;
+.menu a {
+  color: white;
+  text-decoration: none;
 }
 
-.pnavSearchItemPrice{
-  font-weight: 950;
-  color: #b45309;
-  font-size: 0.9rem;
-  white-space: nowrap;
+/* Dropdown INSIDE sidebar */
+.dropdown {
+  background: rgba(255,255,255,0.1);
+  margin: 5px 0 10px 10px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.pnavSearchEmpty{
-  padding: 14px 12px;
-  color: #64748b;
-  font-weight: 800;
+.dropdown a {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.dropdown a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Main content */
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+  width: 100%;
+  background: #0b1220;
+  color: white;
+}
+
+.hero-text {
+  margin-bottom: 20px;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls button {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Indicators */
+.indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  display: inline-block;
+  background: #64748b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #38bdf8;
 }

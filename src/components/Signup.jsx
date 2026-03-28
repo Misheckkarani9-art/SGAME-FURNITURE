@@ -20,6 +20,8 @@ const Signup = () => {
     e.preventDefault();
     setLoading(true);
 
+    
+
     try {
       const formdata = new FormData();
       formdata.append("username", username);
